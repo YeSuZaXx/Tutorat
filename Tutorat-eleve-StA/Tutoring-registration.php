@@ -1,5 +1,6 @@
 <?php 
 
+$motdepasse = "cat";
    
 
 if (isset($_POST['envoi'])) {
@@ -15,7 +16,7 @@ if (isset($_POST['mdp']) AND !empty($_POST['mdp'])) {
   header('Location: http://$host$dir/$file');
 
 
-if ($_POST['mdp'] == "cat") {
+if ($_POST['mdp'] == $motdepasse) {
 
   $accessgranted =1;
 }
