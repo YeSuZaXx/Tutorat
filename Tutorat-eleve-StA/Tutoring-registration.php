@@ -6,7 +6,7 @@ if (isset($_POST['envoi'])) {
 
 
 
-if (isset($_POST['mdp']) /*AND !empty($_POST['mdp'])*/) {
+if (isset($_POST['mdp']) AND !empty($_POST['mdp'])) {
 
     /*echo "<p> TEST " + print_r($_POST); + "</p>";*/
     $host=$_SERVER['HTTP_HOST'];
