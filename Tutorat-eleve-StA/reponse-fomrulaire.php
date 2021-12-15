@@ -7,9 +7,6 @@ require('Tutoring-registration.php');
 
   
 
-
-
-
   function valid_donnees($donnees){
        $donnees = trim($donnees);
         $donnees = stripslashes($donnees);
@@ -18,6 +15,7 @@ require('Tutoring-registration.php');
         $donnees = strip_tags($donnees);
         return $donnees;
       }
+
 
   $nom =valid_donnees($_POST['nom']);
   $prenom =valid_donnees($_POST['prenom']);

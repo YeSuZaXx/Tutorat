@@ -1,51 +1,3 @@
-<?php 
-
-$motdepasse = "cat";
-   
-
-if (isset($_POST['envoi'])) {
-
-
-
-if (isset($_POST['mdp']) AND !empty($_POST['mdp'])) {
-
-    /*echo "<p> TEST " + print_r($_POST); + "</p>";*/
-    $host=$_SERVER['HTTP_HOST'];
-  $dir=rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-  $file='logintuteur.php';
-  header('Location: http://$host$dir/$file');
-
-
-if ($_POST['mdp'] == $motdepasse) {
-
-  $accessgranted =1;
-}
-else {
-
-$error = 'mauvais mot de passe<br />';
-}
-}
-else
-{
-  $error = 'Veuillez remplir la case mot de passe tuteur<br />';
-}
-}
-
-  if (!isset($accessgranted)) { 
-
-  
-  }
-
- if (isset($error)) {
-
-  echo $error; 
-
-
- }
-
-
- 
- ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -70,7 +22,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="Index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="Index.php" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
     <a href="Project-explanation.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project explanation</a>
     <a href="Tutoring-registration.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tutoring registration</a>
     <a href="Contact.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
@@ -90,12 +42,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">TUTORING REGISTRATION</h1>
   <p class="w3-xlarge"></p>
-  <p> mdp tuteur:</p>
-  <form name="form_tuteur" action="Tutoring-registration.php"  methode="post">
   
-  <input type ="password" name="mdp"  />
-  <input type="submit" name="envoi" value="Valider"/> 
-  <form/>
 
 
 
