@@ -10,7 +10,7 @@ $LOGIN_INFORMATION = array(
 define('USE_USERNAME',true);
 
 
-define('LOGOUT_URL', 'http://tutorat/Index.php');
+define('LOGOUT_URL', 'http://tutorat/index.php');
 
 
 define('TIMEOUT_MINUTES', 0.5);
