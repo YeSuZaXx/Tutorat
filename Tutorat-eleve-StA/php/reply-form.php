@@ -1,5 +1,5 @@
 <?php
-require('tutoring_registration.php');
+require('./tutoring-registration.php');
 
 
  $username="root";
@@ -51,6 +51,7 @@ require('tutoring_registration.php');
         }else{
           echo "Une variable n'est pas declaree et ou est null";
         }
+
 
 
 
