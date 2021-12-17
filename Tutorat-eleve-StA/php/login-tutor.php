@@ -1,5 +1,6 @@
 <?php require("./password-protect.php"); ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <title>Tutorat-élèves-StA</title>
@@ -76,4 +77,6 @@ require("./footer.php");
 </body>
 </html>
 
+<?php 
 
+require("./tutor-view.php"); ?>
