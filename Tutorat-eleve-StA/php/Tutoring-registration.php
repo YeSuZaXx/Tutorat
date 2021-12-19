@@ -42,43 +42,43 @@ require("./header.php");
                   Nom
                </div>
                <div class="Form_input">
-                  <input type="varchar" name="nom" class="Form_champ"  />
+                  <input type="text" name="lastname" class="Form_champ"  />
                </div><br />
                <div class="Form_label">
                   Prénom
                </div>
                <div class="Form_input">
-                  <input type="varchar" name="prenom" class="Form_champ" />
+                  <input type="text" name="firstname" class="Form_champ" />
                </div><br />
                <div class="Form_label">
                   Classe
                </div>
               <div class="Form_input">
-                  <input type="varchar" name="classe" class="Form_champ"/>
+                  <input type="text" name="class" class="Form_champ"/>
               </div><br />
 
               <div class="Form_label">
                   Moyen de contact(snap, insta,mail, tel)
                </div>
                <div class="Form_input">
-                  <input type="varchar" name="contact" class="Form_champ" />
+                  <input type="text" name="contact" class="Form_champ" />
                   
                </div><br /><br />
 
            Matière souhaitée   <select id= "myselect" name="myselect" >
-                <option value="English">Help in english</option>
-                <option value="Maths">Help in Mathematics</option>
-                <option value="SVT">Help in SVT</option>
-                <option value="HGGSP">Help in HGGSP</option>
-                <option value="Physics">Help in Physics chemistry</option>
-                <option value="History">History</option>
+                <option value="anglais"> Anglais</option>
+                <option value="mathematiques"> Mathematiques</option>
+                <option value="svt"> SVT</option>
+                <option value="hggsp">HGGSP</option>
+                <option value="physique-chimie"> Physique-chimie</option>
+                <option value="histoire">Histoire</option>
               </select><br></br>
 
                 <div class="Form_label">
                   Detail aide
                </div>
                <div class="Form_input">
-                  <input type="varchar" name="comment" class="Form_champ" style="width: 250px; height: 150px;"/>
+                  <input type="text" name="comment" class="Form_champ" style="width: 250px; height: 150px;"/>
                   
                </div><br />
 

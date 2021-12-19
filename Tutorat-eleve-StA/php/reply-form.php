@@ -17,9 +17,9 @@ require('./tutoring-registration.php');
       }
 
 
-  $nom =valid_donnees($_POST['nom']);
-  $prenom =valid_donnees($_POST['prenom']);
-  $classe =valid_donnees($_POST['classe']);
+  $nom =valid_donnees($_POST['lastname']);
+  $prenom =valid_donnees($_POST['firstname']);
+  $classe =valid_donnees($_POST['class']);
   $contact =valid_donnees($_POST['contact']);
   $myselect =valid_donnees($_POST['myselect']);
   $comment =valid_donnees($_POST['comment']);
@@ -37,7 +37,7 @@ require('./tutoring-registration.php');
      
      
      if (isset($_POST['send'])) {
-          $insertion=$conn->prepare('INSERT INTO tutorattable(nom, prenom, classe, contact, myselect, comment, dateactuelle) VALUES("'.$_POST['nom'].'","'.$_POST['prenom'].'","'.$_POST['classe'].'","'.$_POST['contact'].'","'.$_POST['myselect'].'","'.$_POST['comment'].'", DATE(NOW()))');
+          $insertion=$conn->prepare('INSERT INTO tutorattable(lastname, firstname, class, contact, myselect, comment, dateform) VALUES("'.$_POST['lastname'].'","'.$_POST['firstname'].'","'.$_POST['class'].'","'.$_POST['contact'].'","'.$_POST['myselect'].'","'.$_POST['comment'].'", DATE(NOW()))');
 
 
                $verification=$insertion->execute();

@@ -39,7 +39,7 @@ require("./header.php");
 
 require("./tutor-view.php"); ?>
 
-<table>
+<table border='1'>
 	<tr>
 		<th>Nom</th>
 		<th>Prenom</th>
@@ -52,13 +52,13 @@ require("./tutor-view.php"); ?>
 	<tr>
 		<?php
 			foreach($rows as $row){
-  				echo "<td>".$row['nom']."</td>";
-  				echo "<td>".$row['prenom']."</td>";
-  				echo "<td>".$row['classe']."</td>";
+  				echo "<tr><td>".$row['lastname']."</td>";
+  				echo "<td>".$row['firstname']."</td>";
+  				echo "<td>".$row['class']."</td>";
   				echo "<td>".$row['contact']."</td>";
   				echo "<td>".$row['myselect']."</td>";
   				echo "<td>".$row['comment']."</td>";
-  				echo "<td>".$row['dateactuelle']."</td>";
+  				echo "<td>".$row['dateform']."</td><tr>";
 			}
 			
 		?>
