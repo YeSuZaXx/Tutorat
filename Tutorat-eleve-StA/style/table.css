@@ -1,21 +1,19 @@
 table {
-  table-layout: auto;
-  width: 100%;
-  border-collapse: collapse;
-  border: 4px solid black;
-  
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px solid black;
 }
 
 th, td {
-  padding: 20px;
-  text-align: center;
-
-}
-td{
-	white-space: pre-wrap;
+    padding: 20px;
+    text-align: center;
 }
 
-h1
-{
-	text-align: center;
+td {
+    white-space: pre-wrap;
+}
+
+h1 {
+    text-align: center;
 }
