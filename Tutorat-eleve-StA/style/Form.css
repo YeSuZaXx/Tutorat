@@ -1,69 +1,63 @@
-#Form_body {
-    margin: 0;
+#Form_body{
+   margin:0;
 }
-
-#Form_conteneur {
-    margin: 0;
-    padding: 10px;
-    background: linear-gradient(to bottom, #DDDDDD, #FFFFFF);
+#Form_conteneur{
+   margin:0;
+   padding:10px;
+   background:linear-gradient(to bottom,#DDDDDD,#FFFFFF);
 }
-
-.Form_fieldset {
-    margin: 10px;
-    border: none;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 20px;
+.Form_fieldset{
+   margin:10px;
+   border:none;
+   background-color:#FFFFFF;
+   border-radius:10px;
+   padding:20px;
 }
-
-.Form_legend {
-    font-family: verdana, arial, sans-serif;
-    font-size: 14pt;
-    font-weight: bold;
-    color: #FFFFFF;
-    margin: 10px;
-    padding: 10px 20px 10px 20px;
-    background-color: #AAAAAA;
-    border-radius: 4px;
+.Form_legend{
+   font-family:verdana, arial, sans-serif;
+   font-size:14pt;
+   font-weight:bold;
+   color:#FFFFFF;
+   margin:10px;
+   padding:10px 20px 10px 20px;
+   background-color:#AAAAAA;
+   border-radius:4px;
 }
-
-.Form_label {
-    display: inline-block;
-    width: 200px;
-    font-family: verdana, arial, sans-serif;
-    font-size: 10pt;
-    padding: 10px;
+.Form_label{
+   display:inline-block;
+   width:200px;
+   font-family:verdana, arial, sans-serif;
+   font-size:10pt;
+   padding:10px;
 }
-
-.Form_input {
-    display: inline-block;
-    width: 200px;
-    padding: 6px;
+.Form_input{
+   display:inline-block;
+   width:200px;
+   padding:6px;
 }
-
-.Form_champ {
-    outline: none;
-    border: solid 1px #AAAAAA;
-    padding: 10px;
-    border-radius: 4px;
-    font-family: verdana, arial, sans-serif;
+.Form_champ{
+   outline:none;
+   border:solid 1px #AAAAAA;
+   padding:10px;
+   border-radius:4px;
+   font-family:verdana, arial, sans-serif;
 
 }
 
 
-input[type="submit"].Form_champ {
-    background-color: #EE6600;
-    color: #FFFFFF;
-    padding: 6px 20px 6px 20px;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    width: 160px;
+input[type="submit"].Form_champ{
+   background-color:#EE6600;
+   color:#FFFFFF;
+   padding:6px 20px 6px 20px;
+   border:none;
+   cursor:pointer;
+   padding:10px;
+   width:160px;
 }
-
-#myselect {
-    display: flex;
-    margin-left: 12vw;
-    margin-top: -20px;
+#myselect
+{
+display: flex;
+margin-left: 12vw;
+margin-top: -20px;  
 
 }
