@@ -26,16 +26,16 @@ $comment = valid_donnees($_POST['comment']);
 
 
 try {
-    $conn = new PDO("mysql:host=localhost;dbname=tutorat;port=3308", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sth = new PDO("sqlite:../bdd/Tutorat.db");
+    $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (SQLException $sqle) {
     die('SQL EXCEPTION : ' . $sqle->getMessage());
 }
 
 
 if (isset($_POST['send'])) {
-    $insertion = $conn->prepare('INSERT INTO tutorattable(lastname, firstname, class, contact, myselect, comment, dateform) VALUES("' . $_POST['lastname'] . '","' . $_POST['firstname'] . '","' . $_POST['class'] . '","' . $_POST['contact'] . '","' . $_POST['myselect'] . '","' . $_POST['comment'] . '", DATE(NOW()))');
-
+    $date = "date('now')";
+    $insertion = $sth->prepare('INSERT INTO tutorattable(lastname, firstname, class, contact, myselect, comment, dateform) VALUES("' . $_POST['lastname'] . '","' . $_POST['firstname'] . '","' . $_POST['class'] . '","' . $_POST['contact'] . '","' . $_POST['myselect'] . '","' . $_POST['comment'] . '", '.$date.')');
 
     $verification = $insertion->execute();
     if ($verification) {

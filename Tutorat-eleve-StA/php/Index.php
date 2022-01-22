@@ -35,7 +35,7 @@ require("./header.php");
     <h1 class="w3-margin w3-jumbo">Tutorat StA</h1>
     <p class="w3-xlarge"></p>
 
-    <a href="./login-tutor.php"> espace tuteur:</a>
+    <a href="./login-tutor.php"> espace tuteur</a>
 
 
 </header>
