@@ -49,6 +49,7 @@ require("./header.php");
 
             <table border='1'>
                 <tr>
+                    <th>Id de la requete</th>
                     <th>Nom</th>
                     <th>Prenom</th>
                     <th>classe</th>
@@ -56,22 +57,57 @@ require("./header.php");
                     <th>matiere</th>
                     <th>detail</th>
                     <th>date</th>
+                    <th>statut</th>
                 </tr>
                 <tr>
                     <?php
                     foreach ($rows as $row) {
-                        echo "<tr><td>" . $row['lastname'] . "</td>";
+                        echo "<tr><td>" . $row['id'] . "</td>";
+                        echo "<td>" . $row['lastname'] . "</td>";
                         echo "<td>" . $row['firstname'] . "</td>";
                         echo "<td>" . $row['class'] . "</td>";
                         echo "<td>" . $row['contact'] . "</td>";
                         echo "<td>" . $row['myselect'] . "</td>";
                         echo "<td>" . $row['comment'] . "</td>";
-                        echo "<td>" . $row['dateform'] . "</td><tr>";
+                        echo "<td>" . $row['dateform'] . "</td>";
+                        echo "<td>" . $row['status_name'] . "</td><tr>";
                     }
 
                     ?>
                 </tr>
             </table>
+
+            <h1>Modifier le statut d'une demande de tutorat :</h1><br>
+            <form name="status_edit" method="post" action="tutor-status-update.php">
+                <fieldset class="Form_fieldset">
+                    <div class="Form_label">
+                        Id de la requete à modifier
+                    </div>
+                    <div class="Form_input">
+                        <input type="text" name="id" class="Form_champ"/>
+                    </div> <br>
+
+                    Statut à appliquer <br>
+                    <select id="myselect" name="myselect">
+                        <?php
+                        try {
+                            $sth = new PDO("sqlite:../bdd/Tutorat.db");
+                            $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                        } catch (SQLException $sqle) {
+                            die('SQL EXCEPTION : ' . $sqle->getMessage());
+                        }
+                        $insertion_status = $sth->query("SELECT * FROM status;");
+                        $rows_status = $insertion_status->fetchAll();
+
+                        foreach ($rows_status as $row_status) {
+                            echo "<option value=".$row_status['status_id']."> ".$row_status['status_name']."</option>";
+                        }
+                        ?>
+                    </select>
+                    <br><br>
+                    <div class="Form_input">
+                        <input type="submit" name="send" value="Send" class="Form_champ"/>
+                    </div>
         </div>
 
 
