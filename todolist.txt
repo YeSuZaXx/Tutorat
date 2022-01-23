@@ -1,7 +1,5 @@
---> passer de mysql en sqlite
 -->creation d'une page accesible que pour les admin pour pouvoir creer les comptes tuteurs manuellement et les deletes
 --> faire en sorte de pouvoir trier le tableau des demandes de tutorat de deux façons la premiere par matiere(ordre alphabétique) et la deuxieme par matieres tout court
---> créer un systeme de statut pour les demandes d'aides (EX: en cours, demande réalisée etc...)
 --> créer une autre table pour separer les tuteurs et les demandes d'aides		
 		
 		Les logins tuteur seront selon ce principe

@@ -11,8 +11,7 @@ try {
     die('SQL EXCEPTION : ' . $sqle->getMessage());
 }
 
-$insertion = $sth->query("SELECT * FROM tutorattable WHERE tutorattable.dateform > (SELECT DATE('now','-7 days','weekday 2'));");
-
+$insertion = $sth->query("SELECT * FROM tutorattable INNER JOIN status ON status.status_id = tutorattable.status_id WHERE tutorattable.dateform > (SELECT DATE('now','-7 days','weekday 2'));");
 $rows = $insertion->fetchAll();
 
 
