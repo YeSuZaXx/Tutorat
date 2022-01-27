@@ -47,6 +47,11 @@ require("./header.php");
 
             require("./tutor-view.php"); ?>
 
+            <form method="post" action="tutor-view.php">
+                <input type="checkbox" name="mathématiques">
+
+            </form>
+
             <table border='1'>
                 <tr>
                     <th>Id de la requete</th>

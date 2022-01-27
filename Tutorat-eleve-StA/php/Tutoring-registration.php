@@ -82,23 +82,19 @@ require("./header.php");
                             <option value="svt"> SVT</option>
                             <option value="hggsp">HGGSP</option>
                             <option value="physique-chimie"> Physique-chimie</option>
-                            <option value="ses">SES</option>
-                            <option value="chinois">CHINOIS</option>
-                            <option value="orientation">Orientation</option>
-                            <option value="options-stmg">Options-stmg</option>
-                            <option value="es">ES</option>
-                            <option value="philosophie">Philosophie</option>
-                            <option value="nsi">NSI</option>
-                            <option value="si">SI</option>
-                            <option value="amc">AMC</option>
-                            <option value="hlp">HLP</option>
+                            <option value="français">Français</option>
                             <option value="espagnol">Espagnol</option>
+                            <option value="ses">SES</option>
+                            <option value="orientation">Orientation</option>
+                            <option value="oral">Oral</option>
+                            <option value="amc">AMC</option>
+                            <option value="options stmg">Options stmg</option>
+                            <option value="nsi">NSI</option>
+                            <option value="es">ES</option>
+                            <option value="hlp">HLP</option>
+                            <option value="philosophie">Philosophie</option>
                             <option value="allemand">Allemand</option>
-                            <option value="stss">Stss</option>
-                            <option value="stidd">Stidd</option>
-                            
-                            
-                  
+
                         </select><br></br>
 
                         <div class="Form_label">
