@@ -74,12 +74,14 @@ if (isset($_POST['access_password'])) {
     $logins = $insert->fetchAll();
     if ($login != '' && count($logins) != 0 && $logins[0]['tutor_lastname'] = $login) {
         $login_data = $logins[0];
-        if ($pass == ($login_data['tutor_firstname'] . $login_data['tutor_id'])) {
+        if (!strcmp($pass, ($login_data['tutor_firstname'] . $login_data['tutor_id']))) {
             setcookie("verify", md5($login . '%' . $pass), $timeout, '/');
 
 
             unset($_POST['access_password']);
             unset($_POST['Submit']);
+        } else {
+            showLoginPasswordProtect("Incorrect password.");
         }
     } else {
         showLoginPasswordProtect("Incorrect login.");
