@@ -59,14 +59,14 @@ if (!function_exists('showLoginPasswordProtect')) {
     }
 }
 
-if (isset($_POST['access_password'])) {
-    try {
-        $sth = new PDO("sqlite:../bdd/Tutorat.db");
-        $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (SQLException $sqle) {
-        die('SQL EXCEPTION : ' . $sqle->getMessage());
-    }
+try {
+    $sth = new PDO("sqlite:../bdd/Tutorat.db");
+    $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (SQLException $sqle) {
+    die('SQL EXCEPTION : ' . $sqle->getMessage());
+}
 
+if (isset($_POST['access_password'])) {
     $login = isset($_POST['access_login']) ? $_POST['access_login'] : '';
     $pass = $_POST['access_password'];
 
@@ -74,7 +74,7 @@ if (isset($_POST['access_password'])) {
     $logins = $insert->fetchAll();
     if ($login != '' && count($logins) != 0 && $logins[0]['tutor_lastname'] = $login) {
         $login_data = $logins[0];
-        if ($pass == (strcasecmp($login_data['tutor_firstname'], $login_data['tutor_id']))) {
+        if ($pass == ($login_data['tutor_firstname'] . $login_data['tutor_id'])) {
             setcookie("verify", md5($login . '%' . $pass), $timeout, '/');
 
 
@@ -91,9 +91,18 @@ if (isset($_POST['access_password'])) {
         showLoginPasswordProtect("");
     }
 
+    $insert = $sth->query("SELECT * FROM tutors;");
+    $logins = $insert->fetchAll();
+
+    $LOGIN_INFORMATION = array($logins[0]['tutor_lastname'] => ($logins[0]['tutor_firstname'] . $logins[0]['tutor_id']));
+
+    foreach ($logins as $login) {
+        $LOGIN_INFORMATION[$login['tutor_lastname']] = ($login['tutor_firstname'] . $login['tutor_id']);
+    }
+
     $found = false;
     foreach ($LOGIN_INFORMATION as $key => $val) {
-        $lp = (USE_USERNAME ? $key : '') . '%' . $val;
+        $lp = ($key) . '%' . $val;
         if ($_COOKIE['verify'] == md5($lp)) {
             $found = true;
             // prolong timeout
