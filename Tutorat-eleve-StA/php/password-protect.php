@@ -1,15 +1,5 @@
 <?php
 
-
-$LOGIN_INFORMATION = array(
-    'Alban' => 'admin',
-    'Nathan' => 'admin'
-);
-
-
-define('USE_USERNAME', true);
-
-
 define('LOGOUT_URL', './index.php');
 
 
@@ -54,7 +44,7 @@ if (!function_exists('showLoginPasswordProtect')) {
             <form method="post">
                 <h3>Entrer vos identifiants:</h3>
                 <font color="red"><?php echo $error_msg; ?></font><br/>
-                <?php if (USE_USERNAME) echo 'Login:<br /><input type="input" name="access_login" /><br />Password:<br />'; ?>
+                <?php echo 'Login:<br /><input type="input" name="access_login" /><br />Password:<br />'; ?>
                 <input type="password" name="access_password"/>
                 <p></p><input type="submit" name="Submit" value="Submit"/>
             </form>
@@ -70,20 +60,29 @@ if (!function_exists('showLoginPasswordProtect')) {
 }
 
 if (isset($_POST['access_password'])) {
+    try {
+        $sth = new PDO("sqlite:../bdd/Tutorat.db");
+        $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (SQLException $sqle) {
+        die('SQL EXCEPTION : ' . $sqle->getMessage());
+    }
 
     $login = isset($_POST['access_login']) ? $_POST['access_login'] : '';
     $pass = $_POST['access_password'];
-    if (!USE_USERNAME && !in_array($pass, $LOGIN_INFORMATION)
-        || (USE_USERNAME && (!array_key_exists($login, $LOGIN_INFORMATION) || $LOGIN_INFORMATION[$login] != $pass))
-    ) {
-        showLoginPasswordProtect("Incorrect password.");
+
+    $insert = $sth->query("SELECT * FROM tutors WHERE tutor_lastname = '" . $login . "' ;");
+    $logins = $insert->fetchAll();
+    if ($login != '' && count($logins) != 0 && $logins[0]['tutor_lastname'] = $login) {
+        $login_data = $logins[0];
+        if ($pass == (strcasecmp($login_data['tutor_firstname'], $login_data['tutor_id']))) {
+            setcookie("verify", md5($login . '%' . $pass), $timeout, '/');
+
+
+            unset($_POST['access_password']);
+            unset($_POST['Submit']);
+        }
     } else {
-
-        setcookie("verify", md5($login . '%' . $pass), $timeout, '/');
-
-
-        unset($_POST['access_password']);
-        unset($_POST['Submit']);
+        showLoginPasswordProtect("Incorrect login.");
     }
 
 } else {
