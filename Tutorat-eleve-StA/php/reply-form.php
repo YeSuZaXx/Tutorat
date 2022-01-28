@@ -35,7 +35,7 @@ try {
 
 if (isset($_POST['send'])) {
     $date = "date('now')";
-    $insertion = $sth->prepare('INSERT INTO tutorattable(lastname, firstname, class, contact, myselect, comment, dateform, status_id) VALUES("' . $_POST['lastname'] . '","' . $_POST['firstname'] . '","' . $_POST['class'] . '","' . $_POST['contact'] . '","' . $_POST['myselect'] . '","' . $_POST['comment'] . '", '.$date.', 1)');
+    $insertion = $sth->prepare('INSERT INTO tutorattable(lastname, firstname, class, contact, subject, comment, dateform, status_id) VALUES("' . $_POST['lastname'] . '","' . $_POST['firstname'] . '","' . $_POST['class'] . '","' . $_POST['contact'] . '","' . $_POST['myselect'] . '","' . $_POST['comment'] . '", '.$date.', 1)');
 
     $verification = $insertion->execute();
     if ($verification) {

@@ -47,9 +47,31 @@ require("./header.php");
 
             require("./tutor-view.php"); ?>
 
-            <form method="post" action="tutor-view.php">
-                <input type="checkbox" name="mathématiques">
+            <form method="post" action="login-tutor.php">
+                Trier par ordre alphabétique de matière :
+                <input type="checkbox" name="alphasort"> <br>
 
+                Afficher une seul matière :
+                <select id="subjectselect" name="subjectselect">
+                    <option value="*">Toutes les matières</option>
+                    <?php
+                    try {
+                        $sth = new PDO("sqlite:../bdd/Tutorat.db");
+                        $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    } catch (SQLException $sqle) {
+                        die('SQL EXCEPTION : ' . $sqle->getMessage());
+                    }
+                    $insertion = $sth->query("SELECT * FROM subject;");
+                    $subjects_status = $insertion->fetchAll();
+
+                    foreach ($subjects_status as $subject_status) {
+                        echo "<option value=" . $subject_status['subject_name'] . "> " . $subject_status['subject_name'] . "</option>";
+                    }
+                    ?>
+                </select>
+                </select> <br>
+
+                <input type="submit" name="send" value="Actualiser les tries" class="Form_champ"/>
             </form>
 
             <table border='1'>
@@ -72,7 +94,7 @@ require("./header.php");
                         echo "<td>" . $row['firstname'] . "</td>";
                         echo "<td>" . $row['class'] . "</td>";
                         echo "<td>" . $row['contact'] . "</td>";
-                        echo "<td>" . $row['myselect'] . "</td>";
+                        echo "<td>" . $row['subject'] . "</td>";
                         echo "<td>" . $row['comment'] . "</td>";
                         echo "<td>" . $row['dateform'] . "</td>";
                         echo "<td>" . $row['status_name'] . "</td><tr>";
@@ -90,7 +112,8 @@ require("./header.php");
                     </div>
                     <div class="Form_input">
                         <input type="text" name="id" class="Form_champ"/>
-                    </div> <br>
+                    </div>
+                    <br>
 
                     Statut à appliquer <br>
                     <select id="myselect" name="myselect">
@@ -105,7 +128,7 @@ require("./header.php");
                         $rows_status = $insertion_status->fetchAll();
 
                         foreach ($rows_status as $row_status) {
-                            echo "<option value=".$row_status['status_id']."> ".$row_status['status_name']."</option>";
+                            echo "<option value=" . $row_status['status_id'] . "> " . $row_status['status_name'] . "</option>";
                         }
                         ?>
                     </select>
