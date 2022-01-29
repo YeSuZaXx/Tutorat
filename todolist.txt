@@ -1,2 +1,3 @@
 -->creation d'une page accesible que pour les admin pour pouvoir creer les comptes tuteurs manuellement et les deletes
---> cookie-consent		
+--> cookie-consent	
+--> globaliser la connection à la bdd dans un seul fichier (requiere)
