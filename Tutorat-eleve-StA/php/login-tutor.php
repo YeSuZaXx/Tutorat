@@ -136,6 +136,8 @@ require("./header.php");
                     <div class="Form_input">
                         <input type="submit" name="send" value="Send" class="Form_champ"/>
                     </div>
+                </fieldset>
+            </form>
         </div>
 
 
