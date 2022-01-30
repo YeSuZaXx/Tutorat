@@ -12,8 +12,7 @@ function valid_donnees($donnees)
     $donnees = stripslashes($donnees);
     $donnees = htmlspecialchars($donnees);
     $donnees = htmlentities($donnees);
-    $donnees = strip_tags($donnees);
-    return $donnees;
+    return strip_tags($donnees);
 }
 
 
@@ -25,13 +24,7 @@ $myselect = valid_donnees($_POST['myselect']);
 $comment = valid_donnees($_POST['comment']);
 
 
-try {
-    $sth = new PDO("sqlite:../bdd/Tutorat.db");
-    $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (SQLException $sqle) {
-    die('SQL EXCEPTION : ' . $sqle->getMessage());
-}
-
+require("sql-connection.php");
 
 if (isset($_POST['send'])) {
     $date = "date('now')";

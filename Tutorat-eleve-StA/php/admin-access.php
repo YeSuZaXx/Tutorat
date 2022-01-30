@@ -44,12 +44,7 @@ require("./header.php");
         </tr>
         <tr>
             <?php
-            try {
-                $sth = new PDO("sqlite:../bdd/Tutorat.db");
-                $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            } catch (SQLException $sqle) {
-                die('SQL EXCEPTION : ' . $sqle->getMessage());
-            }
+            require("sql-connection.php");
 
             $tri = $sth->query("SELECT * FROM tutors;");
             $rows = $tri->fetchAll();
@@ -141,12 +136,7 @@ require("./header.php");
         </tr>
         <tr>
             <?php
-            try {
-                $sth = new PDO("sqlite:../bdd/Tutorat.db");
-                $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            } catch (SQLException $sqle) {
-                die('SQL EXCEPTION : ' . $sqle->getMessage());
-            }
+            require("sql-connection.php");require("sql-connection.php");
 
             $tri = $sth->query("SELECT * FROM subject;");
             $rows = $tri->fetchAll();

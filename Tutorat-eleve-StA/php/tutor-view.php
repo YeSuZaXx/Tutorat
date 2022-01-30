@@ -4,12 +4,7 @@
 $username = "root";
 $password = "";
 
-try {
-    $sth = new PDO("sqlite:../bdd/Tutorat.db");
-    $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (SQLException $sqle) {
-    die('SQL EXCEPTION : ' . $sqle->getMessage());
-}
+require("sql-connection.php");
 
 if(isset($_POST['subjectselect']) && !($_POST['subjectselect'] == '*')) {
     $tri = $sth->query("SELECT * FROM requests INNER JOIN status ON status.status_id = requests.status_id WHERE requests.dateform > (SELECT DATE('now','-7 days','weekday 2')) AND subject = '".$_POST['subjectselect']."';");
