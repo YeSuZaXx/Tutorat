@@ -1,12 +1,7 @@
 <?php
 require('./login-tutor.php');
 
-try {
-    $sth = new PDO("sqlite:../bdd/Tutorat.db");
-    $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (SQLException $sqle) {
-    die('SQL EXCEPTION : ' . $sqle->getMessage());
-}
+require("sql-connection.php");
 
 if (isset($_POST['send'])) {
     $date = "date('now')";

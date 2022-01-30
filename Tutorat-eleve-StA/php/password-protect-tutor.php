@@ -59,12 +59,7 @@ if (!function_exists('showLoginPasswordProtect')) {
     }
 }
 
-try {
-    $sth = new PDO("sqlite:../bdd/Tutorat.db");
-    $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (SQLException $sqle) {
-    die('SQL EXCEPTION : ' . $sqle->getMessage());
-}
+require("sql-connection.php");
 
 if (isset($_POST['access_password'])) {
     $login = isset($_POST['access_login']) ? $_POST['access_login'] : '';

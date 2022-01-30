@@ -55,12 +55,8 @@ require("./header.php");
                 <select id="subjectselect" name="subjectselect">
                     <option value="*">Toutes les matières</option>
                     <?php
-                    try {
-                        $sth = new PDO("sqlite:../bdd/Tutorat.db");
-                        $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                    } catch (SQLException $sqle) {
-                        die('SQL EXCEPTION : ' . $sqle->getMessage());
-                    }
+                    require("sql-connection.php");
+
                     $insertion = $sth->query("SELECT * FROM subject;");
                     $subjects_status = $insertion->fetchAll();
 
@@ -118,12 +114,8 @@ require("./header.php");
                     Statut à appliquer <br>
                     <select id="myselect" name="myselect">
                         <?php
-                        try {
-                            $sth = new PDO("sqlite:../bdd/Tutorat.db");
-                            $sth->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                        } catch (SQLException $sqle) {
-                            die('SQL EXCEPTION : ' . $sqle->getMessage());
-                        }
+                        require("sql-connection.php");
+
                         $insertion_status = $sth->query("SELECT * FROM status;");
                         $rows_status = $insertion_status->fetchAll();
 
