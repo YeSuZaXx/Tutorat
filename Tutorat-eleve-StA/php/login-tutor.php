@@ -1,4 +1,4 @@
-<?php require("./password-protect.php"); ?>
+<?php require("./password-protect-tutor.php"); ?>
 
 
 <!DOCTYPE html>
