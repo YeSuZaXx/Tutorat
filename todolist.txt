@@ -1,3 +1,5 @@
 --> cookie-consent	
 --> globaliser la connection à la bdd dans un seul fichier (requiere)
 --> actualiser le responsive avec les nouvelles features ajoutées
+--> optimisation code
+--> stylisation form admin/tuteur
