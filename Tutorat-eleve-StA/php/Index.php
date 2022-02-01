@@ -41,6 +41,16 @@ require("./header.php");
 </header>
 
 
+<div id="cookie_notice"><span>Ce site utilise des cookies. En poursuivant votre navigation sur ce site, vous en acceptez l'utilisation.  <a href="/chemin/vers/la/page/informations" title="En savoir plus sur notre charte relative aux données personnelles">Cliquez ici pour en savoir plus</a><span class="closer" title="Fermer - Close"><button onclick="setExp();">X</button></span></div>
+
+<style>div#cookie_notice {font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bold;position:relative;width:100%;margin:1em
+auto; background-color:#b4b4b4;padding:8px 10px 7px 10px;color:#fff;border-radius: 5px;}
+div#cookie_notice  a {color:#000;font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bold;}
+div#cookie_notice  a:hover {color:#007cc0;}
+div#cookie_notice .closer {position:absolute;  top:5px;right:10px;} /* position Droite */
+div#cookie_notice button {cursor: pointer;}</style>
+
+
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
@@ -100,6 +110,51 @@ require("./header.php");
 require("footer.php");
 
 ?>
+
+
+
+<script type="text/javascript">// <![CDATA[
+function setCookie(nom, valeur, expire, chemin, domaine, securite){
+document.cookie = nom + ' = ' + escape(valeur) + '  ' +
+((expire == undefined) ? '' : ('; expires = ' +
+expire.toGMTString())) +
+((chemin == undefined) ? '' : ('; path = ' + chemin)) +
+((domaine == undefined) ? '' : ('; domain = ' + domaine)) +
+((securite == true) ? '; secure' : '');
+}
+
+var dtExpire = new Date();
+// Le nombre d'heures pendant lesquelles le consentement est valable (ici 48 heures).
+dtExpire.setTime(dtExpire.getTime() + 3600 * 48000);
+
+function  getCookie(name){
+if(document.cookie.length == 0)
+return null;
+var regSepCookie = new RegExp('(; )', 'g');
+var cookies = document.cookie.split(regSepCookie);
+for(var i = 0; i < cookies.length; i++){
+var regInfo = new RegExp('=', 'g');
+var infos = cookies[i].split(regInfo);
+if(infos[0] == name){
+return unescape(infos[1]);
+}
+}
+return null;
+}
+
+// On vérifie la présence du Cookie et l'on affiche ou l'on affiche pas la bannière.
+var elmt = document.getElementById("cookie_notice");
+if ( getCookie("MonSiteFree_AcceptationCookies") == "1" ) {
+elmt.style.display = "none";
+}else{
+elmt.style.display = "";
+}
+// Si le cookie n'est pas présent, on le génère pour le navigateur.
+function setExp(){
+// on modifie son style
+elmt.style.display = "none";
+setCookie('MonSiteFree_AcceptationCookies', '1', dtExpire, '/');     }
+// ]]></script>
 </body>
 </html>
 

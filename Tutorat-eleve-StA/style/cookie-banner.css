@@ -1,4 +1,8 @@
-#container {
+.wrapper {
+  padding: 32px;
+}
+
+.cookie-container {
   position: fixed;
   bottom: -100%;
   left: 0;
@@ -11,7 +15,15 @@
   transition: 400ms;
 }
 
-#cookie {
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
   background: #e84118;
   border: 0;
   color: #f5f6fa;
