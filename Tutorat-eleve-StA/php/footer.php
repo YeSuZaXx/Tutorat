@@ -1,17 +1,3 @@
-<link rel="stylesheet" href="/style/cookie-banner.css" />
-
-<div class="cookie-container">
-            <p>
-                We use cookies in this website to give you the best experience on our
-                site and show you relevant ads. To find out more, read our
-                <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
-            </p>
-
-      <button class="cookie-btn" style="background-color: red;">
-        Okay
-      </button>
-    </div>
-
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">
     <div class="w3-xlarge w3-padding-32">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -21,29 +7,73 @@
         <i class="fa fa-twitter w3-hover-opacity"></i>
         <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
-        <div class="cookie-container">
-            <p>
-                We use cookies in this website to give you the best experience on our
-                site and show you relevant ads. To find out more, read our
-                <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
-            </p>
 
-      <button class="cookie-btn" style="background-color: red;">
-        Okay
-      </button>
-    </div>
+    <div id="cookie_notice"><span>Ce site utilise des cookies. En poursuivant votre navigation sur ce site, vous en acceptez l'utilisation.  <a href="/chemin/vers/la/page/informations" title="En savoir plus sur notre charte relative aux données personnelles">Cliquez ici pour en savoir plus</a><span class="closer" title="Fermer - Close"><button onclick="setExp();">X</button></span></div>
+
+<style>div#cookie_notice {font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bold;position:fixed;top:59rem;
+width:100%;margin:1em
+auto; background-color:#b4b4b4;padding:8px 10px 7px 10px;color:#fff;border-radius: 8px;}
+div#cookie_notice  a {color:#000;font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bold;}
+div#cookie_notice  a:hover {color:#007cc0;}
+div#cookie_notice .closer {position:absolute;  top:5px;right:10px;} /* position Droite */
+div#cookie_notice button {cursor: pointer;}</style>
+        
     
-    <p>© 2021-2022 Alban fabre </p>
-     <button class="cookie-btn" style="background-color: red;">
-        Okay
-      </button>
-</footer>
-    <script src="/js/cookie-consent.js"></script>
+
     <script>
 
+<script type="text/javascript">// <![CDATA[
+function setCookie(nom, valeur, expire, chemin, domaine, securite){
+document.cookie = nom + ' = ' + escape(valeur) + '  ' +
+((expire == undefined) ? '' : ('; expires = ' +
+expire.toGMTString())) +
+((chemin == undefined) ? '' : ('; path = ' + chemin)) +
+((domaine == undefined) ? '' : ('; domain = ' + domaine)) +
+((securite == true) ? '; secure' : '');
+}
+
+var dtExpire = new Date();
+// Le nombre d'heures pendant lesquelles le consentement est valable (ici 48 heures).
+dtExpire.setTime(dtExpire.getTime() + 3600 * 48000);
+
+function  getCookie(name){
+if(document.cookie.length == 0)
+return null;
+var regSepCookie = new RegExp('(; )', 'g');
+var cookies = document.cookie.split(regSepCookie);
+for(var i = 0; i < cookies.length; i++){
+var regInfo = new RegExp('=', 'g');
+var infos = cookies[i].split(regInfo);
+if(infos[0] == name){
+return unescape(infos[1]);
+}
+}
+return null;
+}
+
+// On vérifie la présence du Cookie et l'on affiche ou l'on affiche pas la bannière.
+var elmt = document.getElementById("cookie_notice");
+if ( getCookie("accept_cookie") == "1" ) {
+elmt.style.display = "none";
+}else{
+elmt.style.display = "";
+}
+// Si le cookie n'est pas présent, on le génère pour le navigateur.
+function setExp(){
+// on modifie son style
+elmt.style.display = "none";
+setCookie('accept_cookie', '1', dtExpire, '/');     }
+// ]]></script>
 
 
 
+    
+    <p>© 2021-2022 Alban fabre </p>
+ 
+    
+
+
+<script>
 
     function myFunction() {
         var x = document.getElementById("navDemo");
@@ -56,12 +86,3 @@
 </script>
   </body>
 </html>
-
- 
-
-
-
-
-
-
-
