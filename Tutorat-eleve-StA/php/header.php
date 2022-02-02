@@ -10,30 +10,32 @@
            href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
                     class="fa fa-bars"></i></a>
         <a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-white">Accueil</a>
-        <a href="project-explanation.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">
-        Informations</a>
-        <a href="tutoring-registration.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">
-        Demande d'aide</a>
+        <a href="project_explanation.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">
+            Informations</a>
+        <a href="tutoring_registration.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">
+            Demande d'aide</a>
         <a href="contact.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-        <a href="login-tutor.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espace tuteur</a>
-        <a href="admin-access.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espace admin</a>
+        <a href="login_tutor.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espace
+            tuteur</a>
+        <a href="admin_access.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espace
+            admin</a>
 
     </div>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
         <a href="index.php" class="w3-bar-item w3-button w3-padding-large">
-        Accueil</a>
-        <a href="project-explanation.php" class="w3-bar-item w3-button w3-padding-large">
-        Informations</a>
-        <a href="tutoring-registration.php" class="w3-bar-item w3-button w3-padding-large">
-        Demande d'aide</a>
+            Accueil</a>
+        <a href="project_explanation.php" class="w3-bar-item w3-button w3-padding-large">
+            Informations</a>
+        <a href="tutoring_registration.php" class="w3-bar-item w3-button w3-padding-large">
+            Demande d'aide</a>
         <a href="contact.php" class="w3-bar-item w3-button w3-padding-large">
-        Contact</a>
-        <a href="login-tutor.php" class="w3-bar-item w3-button w3-padding-large">
-        Espace tuteur</a>
-        <a href="admin-access.php" class="w3-bar-item w3-button w3-padding-large">
-        Espace admin</a>
+            Contact</a>
+        <a href="login_tutor.php" class="w3-bar-item w3-button w3-padding-large">
+            Espace tuteur</a>
+        <a href="admin_access.php" class="w3-bar-item w3-button w3-padding-large">
+            Espace admin</a>
     </div>
 </div>
 

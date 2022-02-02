@@ -1,4 +1,4 @@
-<?php require("./password-protect-tutor.php"); ?>
+<?php require("./password_protect_tutor.php"); ?>
 
 
 <!DOCTYPE html>
@@ -26,16 +26,11 @@
 </style>
 <body>
 
-<?php
-require("./header.php");
-
-?>
+<?php require("./header.php"); ?>
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">ESPACE TUTEUR</h1>
-    <p class="w3-xlarge"></p>
-
 </header>
 
 <!-- First Grid -->
@@ -43,11 +38,9 @@ require("./header.php");
     <div class="w3-content">
         <div class="w3-twothird">
             <h1>Eleves inscrits au tutorat de cette semaine:</h1><br>
-            <?php
+            <?php require("./tutor_view.php"); ?>
 
-            require("./tutor-view.php"); ?>
-
-            <form method="post" action="login-tutor.php">
+            <form method="post" action="login_tutor.php">
                 Trier par ordre alphabétique de matière :
                 <input type="checkbox" name="alphasort"> <br>
 
@@ -55,7 +48,7 @@ require("./header.php");
                 <select id="subjectselect" name="subjectselect">
                     <option value="*">Toutes les matières</option>
                     <?php
-                    require("sql-connection.php");
+                    require("sql_connection.php");
 
                     $insertion = $sth->query("SELECT * FROM subject;");
                     $subjects_status = $insertion->fetchAll();
@@ -101,11 +94,9 @@ require("./header.php");
             </table>
 
             <h1>Modifier le statut d'une demande de tutorat :</h1><br>
-            <form name="status_edit" method="post" action="tutor-status-update.php">
+            <form name="status_edit" method="post" action="tutor_status_update.php">
                 <fieldset class="Form_fieldset">
-                    <div class="Form_label">
-                        Id de la requete à modifier
-                    </div>
+                    <div class="Form_label"> Id de la requete à modifier </div>
                     <div class="Form_input">
                         <input type="text" name="id" class="Form_champ"/>
                     </div>
@@ -114,7 +105,7 @@ require("./header.php");
                     Statut à appliquer <br>
                     <select id="myselect" name="myselect">
                         <?php
-                        require("sql-connection.php");
+                        require("sql_connection.php");
 
                         $insertion_status = $sth->query("SELECT * FROM status;");
                         $rows_status = $insertion_status->fetchAll();
@@ -131,21 +122,12 @@ require("./header.php");
                 </fieldset>
             </form>
         </div>
-
-
-        <div class="w3-third w3-center">
-
-        </div>
     </div>
 </div>
 
 <!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
-        <div class="w3-third w3-center">
-
-        </div>
-
         <div class="w3-twothird">
             <h1>Lorem Ipsum</h1>
             <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -167,12 +149,7 @@ require("./header.php");
     <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
 </div>
 
-
-<?php
-
-require("./footer.php");
-?>
-
+<?php require("./footer.php"); ?>
 
 </body>
 </html>

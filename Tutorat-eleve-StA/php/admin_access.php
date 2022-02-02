@@ -1,4 +1,4 @@
-<?php require("./password-protect-admin.php"); ?>
+<?php require("./password_protect_admin.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,11 +24,10 @@
         }
     </style>
 </head>
-<body>
-<?php
-require("./header.php");
 
-?>
+<body>
+
+<?php require("./header.php"); ?>
 
 <br><br>
 <h1>Liste des tuteurs</h1>
@@ -43,7 +42,7 @@ require("./header.php");
     </tr>
     <tr>
         <?php
-        require("sql-connection.php");
+        require("sql_connection.php");
 
         $tri = $sth->query("SELECT * FROM tutors;");
         $rows = $tri->fetchAll();
@@ -90,36 +89,31 @@ require("./header.php");
 <body id="Form_body">
 <form name="tutor_add" method="post" action="./adminPageActions/tutor_add.php">
     <fieldset class="Form_fieldset">
-        <div class="Form_label">
-            Prenom du tuteur
-        </div>
+        <div class="Form_label"> Prenom du tuteur</div>
         <div class="Form_input">
             <input type="text" name="tutor_add_firstname" class="Form_champ"/>
         </div>
-        <div class="Form_label">
-            Nom du tuteur
-        </div>
+
+        <div class="Form_label"> Nom du tuteur</div>
         <div class="Form_input">
             <input type="text" name="tutor_add_lastname" class="Form_champ"/>
         </div>
-        <div class="Form_label">
-            Classe du tuteur
-        </div>
+
+        <div class="Form_label"> Classe du tuteur</div>
         <div class="Form_input">
             <input type="text" name="tutor_add_class" class="Form_champ"/>
         </div>
-        <div class="Form_label">
-            Matières
-        </div>
+
+        <div class="Form_label"> Matières</div>
         <div class="Form_input">
             <input type="text" name="tutor_add_subjects" class="Form_champ"/>
         </div>
-        <div class="Form_label">
-            Type d'aide
-        </div>
+
+        <div class="Form_label"> Type d'aide</div>
         <div class="Form_input">
             <input type="text" name="tutor_add_aidtype" class="Form_champ"/>
         </div>
+
         <br>
         <div class="Form_input">
             <input type="submit" name="send" value="Send" class="Form_champ"/>
@@ -136,8 +130,8 @@ require("./header.php");
     </tr>
     <tr>
         <?php
-        require("sql-connection.php");
-        require("sql-connection.php");
+        require("sql_connection.php");
+        require("sql_connection.php");
 
         $tri = $sth->query("SELECT * FROM subject;");
         $rows = $tri->fetchAll();
@@ -186,10 +180,6 @@ require("./header.php");
 </form>
 </body>
 
+<?php require("./footer.php"); ?>
 
-<?php
-
-require("./footer.php");
-?>
-</body>
 </html>
