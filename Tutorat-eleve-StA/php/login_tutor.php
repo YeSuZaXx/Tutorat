@@ -92,6 +92,7 @@
                     ?>
                 </tr>
             </table>
+            <br>
 
             <h1>Modifier le statut d'une demande de tutorat :</h1><br>
             <form name="status_edit" method="post" action="tutor_status_update.php">
