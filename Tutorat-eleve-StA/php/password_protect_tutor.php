@@ -43,12 +43,12 @@ if (!function_exists('showLoginPasswordProtect')) {
         <div style="width:500px; margin-left:auto; margin-right:auto; text-align:center">
             <form method="post">
                 <h3>Entrer vos identifiants:</h3>
-                <font color="red"><?php echo $error_msg; ?></font><br/>
+                <font color="red"><?php echo $error_msg; ?></font><br>
                 <?php echo 'Login:<br /><input type="input" name="access_login" /><br />Password:<br />'; ?>
                 <input type="password" name="access_password"/>
                 <p></p><input type="submit" name="Submit" value="Submit"/>
             </form>
-            <br/>
+            <br>
         </div>
         </body>
         </html>
@@ -59,7 +59,7 @@ if (!function_exists('showLoginPasswordProtect')) {
     }
 }
 
-require("sql-connection.php");
+require("sql_connection.php");
 
 if (isset($_POST['access_password'])) {
     $login = isset($_POST['access_login']) ? $_POST['access_login'] : '';

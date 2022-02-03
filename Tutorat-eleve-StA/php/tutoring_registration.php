@@ -23,26 +23,19 @@
 </style>
 <body>
 
-<?php
-require("./header.php");
+<?php require("./header.php"); ?>
 
-?>
-
-<!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">TUTORING REGISTRATION</h1>
-    <p class="w3-xlarge"></p>
-
 </header>
 
-<!-- First Grid -->
+<!-- Form Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
             <h1>Form :</h1>
-            <body id="Form_body">
             <div id="Form_conteneur">
-                <form name="inscription" method="post" action="reply-form.php">
+                <form name="inscription" method="post" action="reply_form.php">
                     <fieldset class="Form_fieldset">
                         <legend class="Form_legend">Inscription</legend>
                         <div class="Form_label">
@@ -51,43 +44,42 @@ require("./header.php");
                         <div class="Form_input">
                             <input type="text" name="lastname" class="Form_champ"/>
                         </div>
-                        <br/>
+                        <br>
                         <div class="Form_label">
                             Prénom
                         </div>
                         <div class="Form_input">
                             <input type="text" name="firstname" class="Form_champ"/>
                         </div>
-                        <br/>
+                        <br>
                         <div class="Form_label">
                             Classe
                         </div>
                         <div class="Form_input">
                             <input type="text" name="class" class="Form_champ"/>
                         </div>
-                        <br/>
+                        <br>
 
                         <div class="Form_label">
                             Moyen de contact(snap, insta,mail, tel)
                         </div>
                         <div class="Form_input">
                             <input type="text" name="contact" class="Form_champ"/>
-
                         </div>
-                        <br/><br/>
+                        <br><br>
 
                         Matière souhaitée <select id="myselect" name="myselect">
                             <?php
-                            require("sql-connection.php");
+                            require("sql_connection.php");
 
                             $insertion = $sth->query("SELECT * FROM subject;");
                             $subjects_status = $insertion->fetchAll();
 
                             foreach ($subjects_status as $subject_status) {
-                                echo "<option value=".$subject_status['subject_name']."> ".$subject_status['subject_name']."</option>";
+                                echo "<option value=" . $subject_status['subject_name'] . "> " . $subject_status['subject_name'] . "</option>";
                             }
                             ?>
-                        </select><br></br>
+                        </select><br><br>
 
                         <div class="Form_label">
                             Detail aide
@@ -96,10 +88,9 @@ require("./header.php");
                             <input type="text" name="comment" class="Form_champ" style="width: 250px; height: 150px;"/>
 
                         </div>
-                        <br/>
+                        <br>
 
                         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                        <div class="g-recaptcha" data-sitekey="la_clé_du_site"></div>
                         <button class="g-recaptcha" data-sitekey="la_clé_du_site" data-callback='onReCaptchaValid'>
                             Envoyer
                         </button>
@@ -112,14 +103,10 @@ require("./header.php");
                         <div class="Form_input">
                             <input type="submit" name="send" value="Send" class="Form_champ"/>
                         </div>
-                        <br/>
-
-
+                        <br>
                     </fieldset>
                 </form>
             </div>
-
-            </form>
 
             <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -129,20 +116,12 @@ require("./header.php");
                 ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-
-        <div class="w3-third w3-center">
-
-        </div>
     </div>
 </div>
 
-<!-- Second Grid -->
+<!-- Tuto Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
-        <div class="w3-third w3-center">
-
-        </div>
-
         <div class="w3-twothird">
             <h1>Lorem Ipsum</h1>
             <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -160,16 +139,7 @@ require("./header.php");
     </div>
 </div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
-
-<!-- Footer -->
-
-<?php
-
-require("./footer.php");
-?>
+<?php require("./footer.php"); ?>
 
 </body>
 </html>

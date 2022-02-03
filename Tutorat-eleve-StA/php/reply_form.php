@@ -1,5 +1,5 @@
 <?php
-require('./tutoring-registration.php');
+require('./tutoring_registration.php');
 
 
 $username = "root";
@@ -24,11 +24,11 @@ $myselect = valid_donnees($_POST['myselect']);
 $comment = valid_donnees($_POST['comment']);
 
 
-require("sql-connection.php");
+require("sql_connection.php");
 
 if (isset($_POST['send'])) {
     $date = "date('now')";
-    $insertion = $sth->prepare('INSERT INTO requests(lastname, firstname, class, contact, subject, comment, dateform, status_id) VALUES("' . $_POST['lastname'] . '","' . $_POST['firstname'] . '","' . $_POST['class'] . '","' . $_POST['contact'] . '","' . $_POST['myselect'] . '","' . $_POST['comment'] . '", '.$date.', 1)');
+    $insertion = $sth->prepare('INSERT INTO requests(lastname, firstname, class, contact, subject, comment, dateform, status_id) VALUES("' . $_POST['lastname'] . '","' . $_POST['firstname'] . '","' . $_POST['class'] . '","' . $_POST['contact'] . '","' . $_POST['myselect'] . '","' . $_POST['comment'] . '", ' . $date . ', 1)');
 
     $verification = $insertion->execute();
     if ($verification) {
@@ -41,9 +41,3 @@ if (isset($_POST['send'])) {
 } else {
     echo "Une variable n'est pas declaree et ou est null";
 }
-
-
-?>
-
-
-

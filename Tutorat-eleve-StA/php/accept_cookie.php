@@ -1,15 +1,13 @@
- <div class="cookie-container">
-      <p>
+<div class="cookie-container">
+    <p>
         We use cookies in this website to give you the best experience on our
         site and show you relevant ads. To find out more, read our
         <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
-      </p>
+    </p>
 
-      <button class="cookie-btn">
+    <button class="cookie-btn">
         Okay
-      </button>
-    </div>
+    </button>
+</div>
 
-    <script src="main.js"></script>
-  </body>
-</html>
+<script src="main.js"></script>

@@ -1,7 +1,7 @@
 <?php
-require('./login-tutor.php');
+require('./login_tutor.php');
 
-require("sql-connection.php");
+require("sql_connection.php");
 
 if (isset($_POST['send'])) {
     $date = "date('now')";
@@ -21,5 +21,3 @@ if (isset($_POST['send'])) {
 } else {
     echo "Une variable n'est pas declaree et ou est null";
 }
-
-?>
