@@ -33,42 +33,47 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>Form :</h1>
+            <h1>Formulaire de demande d'aide :</h1>
             <div id="Form_conteneur">
                 <form name="inscription" method="post" action="reply_form.php">
                     <fieldset class="Form_fieldset">
                         <legend class="Form_legend">Inscription</legend>
                         <div class="Form_label">
-                            Nom
+                            Nom :
                         </div>
                         <div class="Form_input">
-                            <input type="text" name="lastname" class="Form_champ"/>
+                            <input type="text" name="lastname" class="Form_champ" placeholder="Dupont" />
                         </div>
                         <br>
                         <div class="Form_label">
-                            Prénom
+                            Prénom :
                         </div>
                         <div class="Form_input">
-                            <input type="text" name="firstname" class="Form_champ"/>
+                            <input type="text" name="firstname" class="Form_champ" placeholder="Didier" />
                         </div>
                         <br>
                         <div class="Form_label">
-                            Classe
+                            Classe :
                         </div>
                         <div class="Form_input">
-                            <input type="text" name="class" class="Form_champ"/>
+                            <input type="text" name="class" class="Form_champ" placeholder="T°A" />
                         </div>
                         <br>
 
                         <div class="Form_label">
-                            Moyen de contact(snap, insta,mail, tel)
+                            Moyen de contact :
                         </div>
                         <div class="Form_input">
-                            <input type="text" name="contact" class="Form_champ"/>
+                            <input type="text" name="contact" class="Form_champ" placeholder="snap,insta,mail,tel"/>
                         </div>
                         <br><br>
-
-                        Matière souhaitée <select id="myselect" name="myselect">
+                        <div class="Form_label">
+                            Matière souhaitée : 
+                        </div>
+                        <div class="Form_input">
+                        <select id="myselect" name="myselect" style="padding: 15px; margin: auto;">
+                            <option value="*">Matières</option>
+                        
                             <?php
                             require("sql_connection.php");
 
@@ -79,16 +84,18 @@
                                 echo "<option value=" . $subject_status['subject_name'] . "> " . $subject_status['subject_name'] . "</option>";
                             }
                             ?>
-                        </select><br><br>
-
+                        </select>
+                        </div>
                         <div class="Form_label">
-                            Detail aide
+                            Detail aide :
                         </div>
                         <div class="Form_input">
-                            <input type="text" name="comment" class="Form_champ" style="width: 250px; height: 150px;"/>
+                            <input type="text" name="comment"  class="Form_champ" size="30" placeholder="chapitre 5 thermodynamique" />
 
                         </div>
                         <br>
+
+                        <!--
 
                         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                         <button class="g-recaptcha" data-sitekey="la_clé_du_site" data-callback='onReCaptchaValid'>
@@ -100,6 +107,8 @@
                             }
                         </script>
 
+                        --> 
+
                         <div class="Form_input">
                             <input type="submit" name="send" value="Send" class="Form_champ"/>
                         </div>
@@ -108,13 +117,7 @@
                 </form>
             </div>
 
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="w3-text-grey">Nous comptons sur vous pour ne pas envoyer de demandes factices, un captchat est en cours de déploiement pour palier à cela.<br><br>Dés que votre demande d'aide aura été envoyée les tuteurs pourront y avoir accès et prendront par la suite contact avec vous pour établir des horaires possibles et des spécificités de la demande.</p>
         </div>
     </div>
 </div>
@@ -123,18 +126,9 @@
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h5>
+            <h2>Un problème avec le formulaire ?</h2>
+            <h5 class="w3-padding-32">Si vous n'arrivez pas a envoyer le formulaire ou quelque problème que ce soit avec celui-ci merci d'en informer les gérants du projet. Vous pouvez retrouver leurs contacts dans l'onglet prévu a cette usage "Contact" ou encore en bas de page en cliquant sur les icones correspondant à leurs réseaux sociaux.</h5>
 
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
 </div>

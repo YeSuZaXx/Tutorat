@@ -11,7 +11,7 @@
     <div id="cookie_notice"><span>Ce site utilise des cookies. En poursuivant votre navigation sur ce site, vous en acceptez l'utilisation.  <a
                     href="/chemin/vers/la/page/informations"
                     title="En savoir plus sur notre charte relative aux données personnelles">Cliquez ici pour en savoir plus</a><span
-                    class="closer" title="Fermer - Close"><button onclick="setExp();">X</button></span></div>
+                class="closer" title="Fermer - Close"><button onclick="setExp();">X</button></span></div>
 
     <style>div#cookie_notice {
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -48,9 +48,9 @@
         }</style>
 
 
-    <script>
+    
 
-        <script type="text/javascript">// <![CDATA[
+        <script type="text/javascript">
             function setCookie(nom, valeur, expire, chemin, domaine, securite
             ){
                 document.cookie = nom + ' = ' + escape(valeur) + '  ' +
@@ -62,9 +62,8 @@
             }
 
             var dtExpire = new Date();
-            // Le nombre d
-            'heures pendant lesquelles le consentement est valable (ici 48 heures
-            ).
+            
+            
             dtExpire.setTime(dtExpire.getTime() + 3600 * 48000
             )
             ;
@@ -85,8 +84,7 @@
             }
 
             // On vérifie la présence du Cookie et l
-            'on affiche ou l
-            'on affiche pas la bannière.
+            
             var elmt = document.getElementById("cookie_notice");
             if ( getCookie("accept_cookie") == "1" ) {
                 elmt.style.display = "none";
@@ -94,7 +92,7 @@
                 elmt.style.display = "";
             }
             // Si le cookie n
-            'est pas présent, on le génère pour le navigateur.
+            
             function setExp(){
 // on modifie son style
                 elmt.style.display = "none";
