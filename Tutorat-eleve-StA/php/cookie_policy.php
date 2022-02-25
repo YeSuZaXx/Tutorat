@@ -22,6 +22,7 @@
 
     .center {
         text-align: center;
+        list-style-position: inside;
     }
 </style>
 <body>
