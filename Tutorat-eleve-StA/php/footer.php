@@ -13,7 +13,7 @@
     </div>
 
     <div id="cookie_notice"><span>Ce site utilise des cookies. En poursuivant votre navigation sur ce site, vous en acceptez l'utilisation.  <a
-                    href="/chemin/vers/la/page/informations"
+                    href="cookie_policy.php"
                     title="En savoir plus sur notre charte relative aux données personnelles">Cliquez ici pour en savoir plus</a><span
                 class="closer" title="Fermer - Close"><button onclick="setExp();">X</button></span></div>
 
@@ -104,6 +104,7 @@
             // ]]></script>
 
 
+    <a href="cookie_policy.php">Politique de confidentialité</a>
     <p>© 2021-2022 Alban fabre </p>
 
 
