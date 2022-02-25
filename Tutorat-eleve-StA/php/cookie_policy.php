@@ -9,11 +9,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body, h1, h2, h3, h4, h5, h6 {
-        font-family: "Lato", sans-serif
+        font-family: "Lato", sans-serif;
+        
+
     }
 
     .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
+        font-family: "Montserrat", sans-serif;
+
     }
 
     .fa-anchor, .fa-coffee {
@@ -24,13 +27,18 @@
         text-align: center;
         list-style-position: inside;
     }
+
+    h1 {
+
+        padding: 50px;
+    }
 </style>
 <body>
 
 <?php require("./header.php"); ?>
 
 <div class="center">
-    <br><br>
+    
     <h1>Qu’est-ce qu’un cookie ?</h1>
 
     <p>Les cookies ou témoins de connexion envoient des informations sur vous aux développeurs des technologies que vous
