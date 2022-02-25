@@ -1,11 +1,15 @@
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">
     <div class="w3-xlarge w3-padding-32">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Contact des gérants du projet :</p>
+        <a href="https://www.Facebook.com/alban.fb"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/alban.fb/"><i class="fa fa-instagram fa-2x "></i></a>
+        <a href="https://www.snpachat.com/add/afabre77?share_id=dGn5g7oyPoc&locate=fr-FR"><i class="fa fa-snapchat w3-hover-opacity fa-2x"></i></a>
+        <p>Plateformes fréquemment utilisées par les élèves :</p>
+        <a href="https://ecoledirecte.com/login"><img src="./../img/ecole-directe.png" style="height: 120px; width: 90px; margin-right: 60px;"></a>
+        <a href="https://www.office.com/"><img src="./../img/OFFICE365.jpg" style="height: 100px; width: 80px; margin-right: 60px;"></a>
+        <a href="https://moodle-esn.net/login/index.php"><img src="./../img/Moodle.png" style="height: 80px; width: 70px; margin-right: 60px; "></a>
+
+        
     </div>
 
     <div id="cookie_notice"><span>Ce site utilise des cookies. En poursuivant votre navigation sur ce site, vous en acceptez l'utilisation.  <a

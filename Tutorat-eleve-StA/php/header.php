@@ -2,6 +2,7 @@
 <html>
 <head>
     <title></title>
+    <script src="https://kit.fontawesome.com/107ba0fc6e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="w3-top">
