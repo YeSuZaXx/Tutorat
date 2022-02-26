@@ -33,41 +33,32 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h5>
+            <h1>Pour nous contacter :</h1><br>
+            <h3 class="w3-padding-32">
+                
+                Alban Fabre <br>
+                    <span style="font-size: medium;"><i>Co-fondateur/ Développeur</i></span>
 
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <ul>Email : <li>- albanfabre40@gmail.com</li></ul>
+                        <a href="https://www.instagram.com/alban.fb/"><i class="fa fa-instagram fa-2x w3-hover-opacity "></i></a>
+                        <ul style="padding: 40px;">Instagram : <li>- @alban.fb</li></ul>
+
+                Nathan Lunel <br>
+                    <span style="font-size: medium;"><i>Fondateur</i></span>
+
+                        <ul>Email : <li> - nathanhugo.lunel@gmail.com</li></ul>
+                         <a href="https://www.instagram.com/nathan_lunell/"><i class="fa fa-instagram fa-2x w3-hover-opacity "></i></a>
+                        <ul style="padding: 40px;">Instagram : <li>- @nathan_lunell</li></ul>
+
+            </h5>
+
+            
         </div>
     </div>
 </div>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-    </div>
-</div>
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"></div>
 
 <!-- Footer -->
 <?php require("./footer.php"); ?>

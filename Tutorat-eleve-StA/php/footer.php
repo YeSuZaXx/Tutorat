@@ -1,8 +1,8 @@
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">
     <div class="w3-xlarge w3-padding-32">
-        <p>Contact des gérants du projet :</p>
-        <a href="https://www.Facebook.com/alban.fb"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
-        <a href="https://www.instagram.com/alban.fb/"><i class="fa fa-instagram fa-2x "></i></a>
+        <p>Contact du développeur du site :</p>
+        <a href="https://www.Facebook.com/alban.fb"><i class="fa-brands fa-facebook-square fa-2x w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/alban.fb/"><i class="fa fa-instagram fa-2x w3-hover-opacity "></i></a>
         <a href="https://www.snpachat.com/add/afabre77?share_id=dGn5g7oyPoc&locate=fr-FR"><i class="fa fa-snapchat w3-hover-opacity fa-2x"></i></a>
         <p>Plateformes fréquemment utilisées par les élèves :</p>
         <a href="https://ecoledirecte.com/login"><img src="./../img/ecole-directe.png" style="height: 120px; width: 90px; margin-right: 60px;"></a>
@@ -105,7 +105,7 @@
 
 
     <a href="cookie_policy.php">Politique de confidentialité</a>
-    <p>© 2021-2022 Alban fabre </p>
+    <p>© 2021-2022 Alban Fabre - Nathan Lunel </p>
 
 
     <script>

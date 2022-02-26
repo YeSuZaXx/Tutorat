@@ -62,6 +62,7 @@
 
                         <div class="Form_label">
                             Moyen de contact :
+                        <i style="font-size: x-small;">Teams sera utilisé comme moyen de contact par défault</i>
                         </div>
                         <div class="Form_input">
                             <input type="text" name="contact" class="Form_champ" placeholder="snap,insta,mail,tel"/>
@@ -110,7 +111,7 @@
                         --> 
 
                         <div class="Form_input">
-                            <input type="submit" name="send" value="Send" class="Form_champ"/>
+                            <input type="submit" name="send" value="envoyer" class="Form_champ"/>
                         </div>
                         <br>
                     </fieldset>

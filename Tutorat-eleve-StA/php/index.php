@@ -29,7 +29,7 @@
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">Tutorat StA</h1>
+    <h1 class="w3-margin w3-jumbo">Accueil</h1>
 </header>
 
 
@@ -37,41 +37,25 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h5>
+            <h1>Tutorat Saint André</h1><br>
+            <h5 class="w3-padding-32" style="font-size: medium;">Vous vous trouvez sur le site officiel du Tutorat au Lycée Saint-André.<br><br>
 
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+Si vous souhaitez en savoir plus sur le projet, consultez l’onglet « <a class="w3-hover-opacity" href="project_explanation.php">Informations »</a>.<br><br>
+
+Pour faire appel à un tuteur, rejoignez l’onglet «<a class="w3-hover-opacity" href="tutoring_registration.php"> Demande d’aide »</a>.<br><br>
+
+Si vous êtes tuteur, vous pouvez consultez les requêtes en vous connectant sur la page « <a class="w3-hover-opacity" href="login_tutor.php">Espace Tuteur</a> ».<br><br>
+
+En cas de problème, vous pouvez contacter le développeur ou le fondateur du projet dans la page « <a class="w3-hover-opacity" href="contact.php">Contact</a> ».<br><br>
+
+Nous vous remercions pour votre soutien envers le projet.</h5>
+
         </div>
     </div>
 </div>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-    </div>
-</div>
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"></div>
 
 <?php require("footer.php"); ?>
 
