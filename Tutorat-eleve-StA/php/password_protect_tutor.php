@@ -65,18 +65,29 @@ if (isset($_POST['access_password'])) {
     $login = isset($_POST['access_login']) ? $_POST['access_login'] : '';
     $pass = $_POST['access_password'];
 
-    $insert = $sth->query("SELECT * FROM tutors WHERE tutor_lastname = '" . $login . "' ;");
+    $login_last_name = explode('.', $login);
+    if (sizeof($login_last_name) >= 2) {
+        $login_last_name = $login_last_name[1];
+    } else {
+        $login_last_name = "...";
+    }
+
+    $insert = $sth->query("SELECT * FROM tutors WHERE tutor_lastname = '" . $login_last_name . "' ;");
     $logins = $insert->fetchAll();
-    if ($login != '' && count($logins) != 0 && $logins[0]['tutor_lastname'] = $login) {
-        $login_data = $logins[0];
-        if (!strcmp($pass, ($login_data['tutor_firstname'] . $login_data['tutor_id']))) {
-            setcookie("verify", md5($login . '%' . $pass), $timeout, '/');
+    if ($login != '' && count($logins) != 0) {
+        $to_check_login = $logins[0]['tutor_firstname'] . "." . $logins[0]['tutor_lastname'];
+        if ($to_check_login == $login) {
+            $login_data = $logins[0];
+            if (!strcmp($pass, ($login_data['tutor_firstname'] . $login_data['tutor_id']))) {
+                setcookie("verify", md5($login . '%' . $pass), $timeout, '/');
 
-
-            unset($_POST['access_password']);
-            unset($_POST['Submit']);
+                unset($_POST['access_password']);
+                unset($_POST['Submit']);
+            } else {
+                showLoginPasswordProtect("Incorrect password.");
+            }
         } else {
-            showLoginPasswordProtect("Incorrect password.");
+            showLoginPasswordProtect("Incorrect login.");
         }
     } else {
         showLoginPasswordProtect("Incorrect login.");
