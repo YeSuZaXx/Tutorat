@@ -3,14 +3,10 @@
 define('LOGOUT_URL', './index.php');
 
 
-define('TIMEOUT_MINUTES', 0.5);
+define('TIMEOUT_MINUTES', 10);
 
 
 define('TIMEOUT_CHECK_ACTIVITY', true);
-
-if (isset($_GET['help'])) {
-    die('Include following code into every page you would like to protect, at the very beginning (first line):<br>&lt;?php include("' . str_replace('\\', '\\\\', __FILE__) . '"); ?&gt;');
-}
 
 
 $timeout = (TIMEOUT_MINUTES == 0 ? 0 : time() + TIMEOUT_MINUTES * 60);

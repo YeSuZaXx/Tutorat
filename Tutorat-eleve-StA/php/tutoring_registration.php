@@ -26,7 +26,7 @@
 <?php require("./header.php"); ?>
 
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">TUTORING REGISTRATION</h1>
+    <h1 class="w3-margin w3-jumbo">Demande d'aide</h1>
 </header>
 
 <!-- Form Grid -->
@@ -128,7 +128,7 @@
     <div class="w3-content">
         <div class="w3-twothird">
             <h2>Un problème avec le formulaire ?</h2>
-            <h5 class="w3-padding-32">Si vous n'arrivez pas a envoyer le formulaire ou quelque problème que ce soit avec celui-ci merci d'en informer les gérants du projet. Vous pouvez retrouver leurs contacts dans l'onglet prévu a cette usage "Contact" ou encore en bas de page en cliquant sur les icones correspondant à leurs réseaux sociaux.</h5>
+            <h5 class="w3-padding-32">Si vous n'arrivez pas a envoyer le formulaire ou quelque problème que ce soit avec celui-ci vous pouvez nous contacter... Vous pouvez retrouver nos contacts dans l'onglet prévu a cette usage "<a class="w3-hover-opacity" href="contact.php">Contact</a>" ou encore en bas de page en cliquant sur les icones correspondant aux éseaux sociaux du développeur du site.</h5>
 
         </div>
     </div>

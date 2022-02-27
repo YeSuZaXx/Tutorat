@@ -35,22 +35,47 @@
         <div class="w3-twothird">
             <h1>Pour nous contacter :</h1><br>
             <h3 class="w3-padding-32">
-                
+            <div class="profil1">
                 Alban Fabre <br>
                     <span style="font-size: medium;"><i>Co-fondateur/ Développeur</i></span>
 
-                        <ul>Email : <li>- albanfabre40@gmail.com</li></ul>
-                        <a href="https://www.instagram.com/alban.fb/"><i class="fa fa-instagram fa-2x w3-hover-opacity "></i></a>
-                        <ul style="padding: 40px;">Instagram : <li>- @alban.fb</li></ul>
+                        <ul>Email : <li>- albanfabre40@gmail.com
 
+                                <a href="mailto:albanfabre40@gmail.com" style="padding: 10px;"><i class="fas fa-envelope fa-2x w3-hover-opacity"></i></a>
+                        </li>
+
+                        </ul>
+
+                        <ul style="padding: 40px;">Instagram : <li>- @alban.fb
+
+                                <a href="https://www.instagram.com/alban.fb/" style="padding: 10px ;"><i class="fa fa-instagram fa-2x w3-hover-opacity "></i></a>
+                        </li>
+
+                        </ul>
+                       
+            </div>
+            <div>
+                
                 Nathan Lunel <br>
                     <span style="font-size: medium;"><i>Fondateur</i></span>
 
-                        <ul>Email : <li> - nathanhugo.lunel@gmail.com</li></ul>
-                         <a href="https://www.instagram.com/nathan_lunell/"><i class="fa fa-instagram fa-2x w3-hover-opacity "></i></a>
-                        <ul style="padding: 40px;">Instagram : <li>- @nathan_lunell</li></ul>
+                        <ul>Email : <li> - nathanhugo.lunel@gmail.com
 
-            </h5>
+                                <a href="mailto:nathanhugo.lunel@gmail.com" style="padding: 10px;"><i class="fas fa-envelope fa-2x w3-hover-opacity"></i></a>
+                        </li>
+
+                        </ul>
+                        
+                        <ul style="padding: 40px;">Instagram : <li>- @nathan_lunell
+
+                                <a href="https://www.instagram.com/nathan_lunell/" style="padding: 10px;"><i class="fa fa-instagram fa-2x w3-hover-opacity "></i></a>
+                        </li>
+
+                        </ul>
+                        
+            </div>
+
+            </h3>
 
             
         </div>

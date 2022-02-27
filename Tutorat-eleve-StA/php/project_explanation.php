@@ -26,7 +26,7 @@
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">PROJECT EXPLANATION</h1>
+    <h1 class="w3-margin w3-jumbo">Informations</h1>
 </header>
 
 <!-- First Grid -->
@@ -57,7 +57,7 @@ Pour les tuteurs, c’est une expérience riche et unique à découvrir. Partici
             <h1>Formuler sa demande d'aide :</h1><br>
             <img src="./../img/Formuler_sa_demande.png" class="w3-padding-20" height="600" width="800" style="border-radius: 4px;"><br>
 
-            <p class="w3-text-grey">En fonction de la taille de votre écran ainsi que du navigateur que vous utilisez certains aspects peuvent changer notamment couleurs,rendu, emplacement des boutons et plus encore néanmoins le fonctionnement reste identique. </p>
+            <p class="w3-text-grey">En fonction de la taille de votre écran ainsi que du navigateur que vous utilisez certains aspects peuvent changer notamment couleurs,rendu, emplacement des boutons et plus encore... Le fonctionnement du site  reste néanmoins identique. </p>
         </div>
     </div>
 </div>

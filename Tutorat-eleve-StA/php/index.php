@@ -40,13 +40,13 @@
             <h1>Tutorat Saint André</h1><br>
             <h5 class="w3-padding-32" style="font-size: medium;">Vous vous trouvez sur le site officiel du Tutorat au Lycée Saint-André.<br><br>
 
-Si vous souhaitez en savoir plus sur le projet, consultez l’onglet « <a class="w3-hover-opacity" href="project_explanation.php">Informations »</a>.<br><br>
+Si vous souhaitez en savoir plus sur le projet, consultez l’onglet « <a class="w3-hover-opacity" href="project_explanation.php">Informations</a>».<br><br>
 
-Pour faire appel à un tuteur, rejoignez l’onglet «<a class="w3-hover-opacity" href="tutoring_registration.php"> Demande d’aide »</a>.<br><br>
+Pour faire appel à un tuteur, rejoignez l’onglet «<a class="w3-hover-opacity" href="tutoring_registration.php"> Demande d’aide</a>».<br><br>
 
-Si vous êtes tuteur, vous pouvez consultez les requêtes en vous connectant sur la page « <a class="w3-hover-opacity" href="login_tutor.php">Espace Tuteur</a> ».<br><br>
+Si vous êtes tuteur, vous pouvez consultez les requêtes en vous connectant sur la page « <a class="w3-hover-opacity" href="login_tutor.php">Espace Tuteur</a>».<br><br>
 
-En cas de problème, vous pouvez contacter le développeur ou le fondateur du projet dans la page « <a class="w3-hover-opacity" href="contact.php">Contact</a> ».<br><br>
+En cas de problème, vous pouvez contacter le développeur ou le fondateur du projet dans la page « <a class="w3-hover-opacity" href="contact.php">Contact</a>».<br><br>
 
 Nous vous remercions pour votre soutien envers le projet.</h5>
 
