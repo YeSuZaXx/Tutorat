@@ -37,7 +37,7 @@
             <h3 class="w3-padding-32">
             <div class="profil1">
                 Alban Fabre <br>
-                    <span style="font-size: medium;"><i>Co-fondateur/ Développeur</i></span>
+                    <span style="font-size: medium;"><i>Co-Fondateur/ Développeur</i></span>
 
                         <ul>Email : <li>- albanfabre40@gmail.com
 
