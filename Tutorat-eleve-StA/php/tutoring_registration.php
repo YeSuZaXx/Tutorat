@@ -128,7 +128,7 @@
     <div class="w3-content">
         <div class="w3-twothird">
             <h2>Un problème avec le formulaire ?</h2>
-            <h5 class="w3-padding-32">Si vous n'arrivez pas a envoyer le formulaire ou quelque problème que ce soit avec celui-ci vous pouvez nous contacter... Vous pouvez retrouver nos contacts dans l'onglet prévu a cette usage "<a class="w3-hover-opacity" href="contact.php">Contact</a>" ou encore en bas de page en cliquant sur les icones correspondant aux éseaux sociaux du développeur du site.</h5>
+            <h5 class="w3-padding-32">Si vous n'arrivez pas a envoyer le formulaire ou quelque problème que ce soit avec celui-ci vous pouvez nous contacter... Vous pouvez retrouver nos contacts dans l'onglet prévu a cette usage "<a class="w3-hover-opacity" href="contact.php">Contact</a>" ou encore en bas de page en cliquant sur les icones correspondant aux réseaux sociaux du développeur du site.</h5>
 
         </div>
     </div>
