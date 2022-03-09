@@ -3,7 +3,7 @@
         <p>Contact du développeur du site :</p>
         <a href="https://www.Facebook.com/alban.fb"><i class="fa-brands fa-facebook-square fa-2x w3-hover-opacity"></i></a>
         <a href="https://www.instagram.com/alban.fb/"><i class="fa fa-instagram fa-2x w3-hover-opacity "></i></a>
-        <a href="https://www.snpachat.com/add/afabre77?share_id=dGn5g7oyPoc&locate=fr-FR"><i class="fa fa-snapchat w3-hover-opacity fa-2x"></i></a>
+        <a href="https://www.snapchat.com/add/afabre77?share_id=dGn5g7oyPoc&locate=fr-FR"><i class="fa fa-snapchat w3-hover-opacity fa-2x"></i></a>
         <p>Plateformes fréquemment utilisées par les élèves :</p>
         <a href="https://ecoledirecte.com/login"><img src="./../img/ecole-directe.png" style="height: 120px; width: 90px; margin-right: 60px;"></a>
         <a href="https://www.office.com/"><img src="./../img/OFFICE365.jpg" style="height: 100px; width: 80px; margin-right: 60px;"></a>

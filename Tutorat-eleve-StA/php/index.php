@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Tutorat-élèves-StA</title>
+<title>Mentorat-élèves-StA</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -37,7 +37,7 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>Tutorat Saint André</h1><br>
+            <h1>Mentorat Saint André</h1><br>
             <h5 class="w3-padding-32" style="font-size: medium;">Vous vous trouvez sur le site officiel du Tutorat au Lycée Saint-André.<br><br>
 
 Si vous souhaitez en savoir plus sur le projet, consultez l’onglet « <a class="w3-hover-opacity" href="project_explanation.php">Informations</a>».<br><br>
