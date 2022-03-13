@@ -13,10 +13,10 @@ define('USE_USERNAME', true);
 define('LOGOUT_URL', './index.php');
 
 
-define('TIMEOUT_MINUTES', 0.5);
+define('TIMEOUT_MINUTES', 10);
 
 
-define('TIMEOUT_CHECK_ACTIVITY', false);
+define('TIMEOUT_CHECK_ACTIVITY', true);
 
 
 $timeout = (TIMEOUT_MINUTES == 0 ? 0 : time() + TIMEOUT_MINUTES * 60);
