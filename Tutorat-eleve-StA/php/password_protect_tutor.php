@@ -98,10 +98,10 @@ if (isset($_POST['access_password'])) {
     $insert = $sth->query("SELECT * FROM tutors;");
     $logins = $insert->fetchAll();
 
-    $LOGIN_INFORMATION = array($logins[0]['tutor_lastname'] => ($logins[0]['tutor_firstname'] . $logins[0]['tutor_id']));
+    $LOGIN_INFORMATION = array($logins[0]['tutor_firstname'] . "." . $logins[0]['tutor_lastname'] => ($logins[0]['tutor_firstname'] . $logins[0]['tutor_id']));
 
     foreach ($logins as $login) {
-        $LOGIN_INFORMATION[$login['tutor_lastname']] = ($login['tutor_firstname'] . $login['tutor_id']);
+        $LOGIN_INFORMATION[$login['tutor_firstname'] . "." . $login['tutor_lastname']] = ($login['tutor_firstname'] . $login['tutor_id']);
     }
 
     $found = false;

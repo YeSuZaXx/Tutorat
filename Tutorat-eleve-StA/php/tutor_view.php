@@ -1,8 +1,5 @@
 <?php
 
-$username = "root";
-$password = "";
-
 require("sql_connection.php");
 
 if (isset($_POST['subjectselect']) && !($_POST['subjectselect'] == '*')) {
