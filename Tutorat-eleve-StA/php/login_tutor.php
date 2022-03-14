@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <title>Mentorat-élèves-StA</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
