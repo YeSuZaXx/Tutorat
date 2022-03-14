@@ -60,10 +60,10 @@ if (!function_exists('showLoginPasswordProtect')) {
 require("sql_connection.php");
 
 if (isset($_POST['access_password'])) {
-    $login = isset($_POST['access_login']) ? $_POST['access_login'] : '';
+    $login_field = isset($_POST['access_login']) ? $_POST['access_login'] : '';
     $pass = $_POST['access_password'];
 
-    $login_last_name = explode('.', $login);
+    $login_last_name = explode('.', $login_field);
     if (sizeof($login_last_name) >= 2) {
         $login_last_name = $login_last_name[1];
     } else {
@@ -72,20 +72,20 @@ if (isset($_POST['access_password'])) {
 
     $insert = $sth->query("SELECT * FROM tutors WHERE tutor_lastname = '" . $login_last_name . "' ;");
     $logins = $insert->fetchAll();
-    if ($login != '' && count($logins) != 0) {
-        $to_check_login = $logins[0]['tutor_firstname'] . "." . $logins[0]['tutor_lastname'];
-        if ($to_check_login == $login) {
-            $login_data = $logins[0];
-            if (!strcmp($pass, ($login_data['tutor_firstname'] . $login_data['tutor_id']))) {
-                setcookie("verify", md5($login . '%' . $pass), $timeout, '/');
+    if ($login_field != '' && count($logins) != 0) {
+        for ($i = 0; $i < count($logins); $i++) {
+            $to_check_login = $logins[$i]['tutor_firstname'] . "." . $logins[$i]['tutor_lastname'];
+            if ($to_check_login == $login_field) {
+                $login_data = $logins[$i];
+                if (!strcmp($pass, ($login_data['tutor_firstname'] . $login_data['tutor_id']))) {
+                    setcookie("verify", md5($login_field . '%' . $pass), $timeout, '/');
 
-                unset($_POST['access_password']);
-                unset($_POST['Submit']);
-            } else {
-                showLoginPasswordProtect("Incorrect password.");
+                    unset($_POST['access_password']);
+                    unset($_POST['Submit']);
+                } else {
+                    showLoginPasswordProtect("Incorrect password.");
+                }
             }
-        } else {
-            showLoginPasswordProtect("Incorrect login.");
         }
     } else {
         showLoginPasswordProtect("Incorrect login.");
@@ -102,8 +102,8 @@ if (isset($_POST['access_password'])) {
 
     $LOGIN_INFORMATION = array($logins[0]['tutor_firstname'] . "." . $logins[0]['tutor_lastname'] => ($logins[0]['tutor_firstname'] . $logins[0]['tutor_id']));
 
-    foreach ($logins as $login) {
-        $LOGIN_INFORMATION[$login['tutor_firstname'] . "." . $login['tutor_lastname']] = ($login['tutor_firstname'] . $login['tutor_id']);
+    foreach ($logins as $login_field) {
+        $LOGIN_INFORMATION[$login_field['tutor_firstname'] . "." . $login_field['tutor_lastname']] = ($login_field['tutor_firstname'] . $login_field['tutor_id']);
     }
 
     $found = false;
