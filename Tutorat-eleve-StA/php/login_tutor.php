@@ -63,6 +63,7 @@
                 <input type="submit" name="send" value="Actualiser les tries" class="Form_champ"/>
             </form>
 
+        <div style="overflow-x: auto;">
             <table border='1'>
                 <tr>
                     <th>Id de la requete</th>
@@ -92,6 +93,7 @@
                     ?>
                 </tr>
             </table>
+        </div>
             <br>
 
             <h1>Modifier le statut d'une demande de tutorat :</h1><br>
