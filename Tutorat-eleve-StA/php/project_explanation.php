@@ -34,16 +34,16 @@
     <div class="w3-content">
         <div class="w3-twothird">
             <h1>Explication du projet :</h1>
-            <h5 class="w3-padding-32">Le Tutorat est une aide scolaire accessible aux élèves venant de tous niveaux, Seconde, Première, Terminale, de toutes les filières.<br><br> 
+            <h5 class="w3-padding-32">Le mentorat est une aide scolaire accessible aux élèves venant de tous niveaux, Seconde, Première, Terminale, de toutes les filières.<br><br> 
 Ce sont des élèves motivés et compétents dans leurs matières qui proposent leur aide à d’autres élèves.
 Il est possible aux élèves de demander une aide ponctuelle, un exercice en maths, un point de cours à aborder… Il est également possible de demander un accompagnement plus long, afin de renforcer certaines compétences, relatives aux matières scolaires, ainsi que de l’assistance pour l’Oral ou pour des examens.<br><br>  
 Ainsi, il est possible de développer certaines des compétences de l’élèves au travers de l’aide d’un autre élève. Cela permet d’avoir un point de vue plus diversifier, qui vient se rajouter à celui du professeur.<br><br>
 L’aide est accessible en deux temps :
-<ul><li>Pendant les cours de soutien, les élèves tuteurs peuvent se rajouter aux professeurs. Les élèves auront ainsi accès au soutien du professeur et du tuteur.</ul></li><br>
+<ul><li>Pendant les cours de soutien, les élèves mentors peuvent se rajouter aux professeurs. Les élèves auront ainsi accès au soutien du professeur et du mentor.</ul></li><br>
 
-<ul><li>Sur le site internet, les élèves peuvent demander de l’aide aux tuteurs. Ils seront ensuite contactés par un tuteur sur TEAMS ou un autre moyen de contact. </ul></li><br>
+<ul><li>Sur le site internet, les élèves peuvent demander de l’aide aux mentors. Ils seront ensuite contactés par un mentor sur TEAMS ou un autre moyen de contact. </ul></li><br>
 
-Pour les tuteurs, c’est une expérience riche et unique à découvrir. Participer à ce projet ajoute une véritable valeur supplémentaire à votre dossier. Il peut être valoriser sur votre Parcoursup ®.
+Pour les mentors, c’est une expérience riche et unique à découvrir. Participer à ce projet ajoute une véritable valeur supplémentaire à votre dossier. Il peut être valoriser sur votre Parcoursup ®.
 </h5>
 
         </div>

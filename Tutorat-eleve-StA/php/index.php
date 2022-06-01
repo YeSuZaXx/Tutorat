@@ -44,7 +44,7 @@ Si vous souhaitez en savoir plus sur le projet, consultez l’onglet « <a class
 
 Pour faire appel à un tuteur, rejoignez l’onglet «<a class="w3-hover-opacity" href="tutoring_registration.php"> Demande d’aide</a>».<br><br>
 
-Si vous êtes tuteur, vous pouvez consultez les requêtes en vous connectant sur la page « <a class="w3-hover-opacity" href="login_tutor.php">Espace Tuteur</a>».<br><br>
+Si vous êtes tuteur, vous pouvez consultez les requêtes en vous connectant sur la page « <a class="w3-hover-opacity" href="login_tutor.php">Espace Mentor</a>».<br><br>
 
 En cas de problème, vous pouvez contacter le développeur ou le fondateur du projet dans la page « <a class="w3-hover-opacity" href="contact.php">Contact</a>».<br><br>
 

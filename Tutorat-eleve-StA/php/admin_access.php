@@ -30,10 +30,10 @@
 <?php require("./header.php"); ?>
 
 <br><br>
-<h1>Liste des tuteurs</h1>
+<h1>Liste des mentors</h1>
 <table border='1'>
     <tr>
-        <th>Id du tuteur</th>
+        <th>Id du mentors</th>
         <th>Nom</th>
         <th>Prenom</th>
         <th>classe</th>
@@ -89,17 +89,17 @@
 <body id="Form_body">
 <form name="tutor_add" method="post" action="./adminPageActions/tutor_add.php">
     <fieldset class="Form_fieldset">
-        <div class="Form_label"> Prenom du tuteur</div>
+        <div class="Form_label"> Prenom du mentor</div>
         <div class="Form_input">
             <input type="text" name="tutor_add_firstname" class="Form_champ"/>
         </div>
 
-        <div class="Form_label"> Nom du tuteur</div>
+        <div class="Form_label"> Nom du mentor</div>
         <div class="Form_input">
             <input type="text" name="tutor_add_lastname" class="Form_champ"/>
         </div>
 
-        <div class="Form_label"> Classe du tuteur</div>
+        <div class="Form_label"> Classe du mentor</div>
         <div class="Form_input">
             <input type="text" name="tutor_add_class" class="Form_champ"/>
         </div>

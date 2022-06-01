@@ -17,7 +17,7 @@
             Demande d'aide</a>
         <a href="contact.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
         <a href="login_tutor.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espace
-            tuteur</a>
+            mentor</a>
         <a href="admin_access.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espace
             admin</a>
 
@@ -34,7 +34,7 @@
         <a href="contact.php" class="w3-bar-item w3-button w3-padding-large">
             Contact</a>
         <a href="login_tutor.php" class="w3-bar-item w3-button w3-padding-large">
-            Espace tuteur</a>
+            Espace mentor</a>
         <a href="admin_access.php" class="w3-bar-item w3-button w3-padding-large">
             Espace admin</a>
     </div>

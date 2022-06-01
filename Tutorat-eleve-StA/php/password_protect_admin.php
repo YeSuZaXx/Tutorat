@@ -3,7 +3,8 @@
 
 $LOGIN_INFORMATION = array(
     'Alban_12400' => 'QTze@1',
-    'Nathan' => 'admin458'
+    'Nathan' => 'admin458','Dargelos' => 't6gDH5',
+    'Chevallier' => 'HH78ma', 'Ledys' => 'X6TxK2' 
 );
 
 
@@ -36,7 +37,7 @@ if (!function_exists('showLoginPasswordProtect')) {
         ?>
         <html>
         <head>
-            <title>PORTAIL DE CONNECTION TUTEUR</title>
+            <title>PORTAIL DE CONNECTION ADMIN</title>
             <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
             <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
         </head>
